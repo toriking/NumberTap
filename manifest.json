@@ -1,0 +1,14 @@
+{
+    "name": "数字押しタイムアタック",
+    "short_name": "数字押し",
+    "icons": [
+        {
+            "src": "images/NumberTap-pwa-icon",
+            "sizes": "522x522",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "https://toriking.github.io/NumberTap/",
+    "display": "standalone",
+    "theme_color": "#e91e63"
+}

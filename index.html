@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="twitter:card" content="summary_large_image" >
+    <meta name="twitter:site" content="@toriton2020" >
+    <meta property="og:url" content="https://toriking.github.io/NumberTap/" >
+    <meta property="og:title" content="NumnberTap">
+    <meta property="og:description" content="数字を昇順にタップしていくタイムアタックゲームです。" >
+    <meta property="og:image" content="https://toriking.github.io/NumberTap/images/NumberTap-image.png" >
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="sass/layout.css?20201019">
+    <title>NumberTap</title>
+</head>
+<body>
+    <div class="modal">
+        <input id="number" type="tel" value="" placeholder="１～５を入力してください">
+        <input id="next" type="button" value="Let'Go">
+    </div>
+    <div class="start"></div>
+    <div class="borde"></div>
+    <div class="option">
+        <a id="tweet" class="unactive" target="_blank" rel="noopener noreferrer">
+            <img src="images/twitter.svg" alt="image">
+        </a> 
+        <img id="retry" class="unactive" src="images/rotate-clockwise.svg" alt="image">
+    </div>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+window.addEventListener('load', function() {
+if ('serviceWorker' in navigator) {
+navigator.serviceWorker.register("/serviceWorker.js")
+.then(function(registration) {
+console.log("serviceWorker registed.");
+}).catch(function(error) {
+console.warn("serviceWorker error.", error);
+});
+}
+});
+</script>
+</body>
+</html>
